@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros</title>
+    <style>
+            * { 
+                margin: 0; 
+                padding: 0; 
+                box-sizing: 
+                border-box; font-size:1rem;
+                font-family: sans-serif;
+            }
+            body { 
+                min-height: 100vh; 
+                height: 100%; 
+                line-height: 1.2; 
+            }
+            #container {
+                max-width: 1280px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            #dados {
+                padding: 15px;
+                display: flex;                
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 5px;
+            }
+            h1 { 
+                margin-bottom: 1rem;
+                font-size: calc(1rem + 2vw);
+            }
+            input, button {
+                padding: 20px;
+                border-radius: 6px;
+                border: 1px solid rgb(203, 204, 204);
+                background-color: transparent;
+                font-size: calc(1rem + .5vw);
+                text-align: center;
+            }
+            button {
+                background-color: rgb(31, 109, 235);
+                color: white;
+            }
+            #recebido {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            .numeros {
+                width: 150px;
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #ccc;
+                flex-direction: column;
+                font-size: calc(1rem + 2vw);
+                font-weight: bold;
+            }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="dados">
+            <h1>Insira o intervalo</h1>
+            <input type="text" id="um">
+            <input type="text" id="dois">
+            <button id="botao">Gerar</button>
+
+        </div>
+        <div id="recebido"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
