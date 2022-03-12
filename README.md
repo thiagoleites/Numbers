@@ -1,1 +1,1 @@
-# Script para geração de fichas
+# Script básico em Javascript para geração de fichas/tickets.
